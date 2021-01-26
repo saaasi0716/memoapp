@@ -2,14 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import firebase from 'firebase';
 import Hello from './src/components/Hello';
-import BodyText from './src/elements/BodyText';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello!</Text>
       <Hello />
-      <BodyText />
     </View>
   );
 }
