@@ -36,10 +36,3 @@ const firebaseConfig = {
 if (firebase.app.lemgth === 0) {
  firebase.initializeApp(firebaseConfig)
 }
-
-
-
-
-
-
-
