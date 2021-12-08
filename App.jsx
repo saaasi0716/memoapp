@@ -5,7 +5,7 @@ import { Button, Platform, SafeAreaView, ScrollView, StyleSheet, Text, View, Key
 import MyAdmob from './src/components/MyAdmob';
 import Hello from './src/components/Hello';
 import AppBar from './src/components/AppBar';
-
+import { AntDesign } from '@expo/vector-icons';
 
 export default function App() {
 
@@ -47,7 +47,7 @@ export default function App() {
         <StatusBar style="auto" />
         <View><TextInput>
           ここに予定を入力！
-　　　　　　
+          　　　　　　<AntDesign name="pluscircleo" size={32} color="black" />
 
 
 
