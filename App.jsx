@@ -2,10 +2,12 @@ import { AdMobInterstitial } from 'expo-ads-admob';
 import { StatusBar } from 'expo-status-bar';
 import React, { useCallback, useEffect } from 'react';
 import { Button, Platform, SafeAreaView, ScrollView, StyleSheet, Text, View, KeyboardAvoidingView, TextInput, TouchableOpacity, } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
+
+
 import MyAdmob from './src/components/MyAdmob';
 import Hello from './src/components/Hello';
 import AppBar from './src/components/AppBar';
-import { AntDesign } from '@expo/vector-icons';
 
 export default function App() {
 
@@ -47,16 +49,13 @@ export default function App() {
         <StatusBar style="auto" />
         <View><TextInput>
           ここに予定を入力！
-          　　　　　　<AntDesign name="pluscircleo" size={32} color="black" />
+　　　　　　<AntDesign name="pluscircleo" size={24} color="black" />
 
 
 
           保存する場合は下の青ボタンをプッシュ！
           </TextInput></View>
-          <View><Hello>
-          </Hello>
 
-          </View>
         <View style={{ backgroundColor: 'blue', margin: 32, borderRadius: 10 }}>
           <Button title='インタースティシャル表示テスト' color='white' onPress={viewInterstatial} />
         </View>
@@ -67,29 +66,12 @@ export default function App() {
           bannerSize='banner'
         />
         <Text style={{ fontSize: 24, textAlign: 'center', margin: 10 }}>bannerSize='fullBanner'</Text>
-        <MyAdmob
-          bannerSize='fullBanner'
-        />
-        <Text style={{ fontSize: 24, textAlign: 'center', margin: 10 }}>bannerSize='largeBanner'</Text>
-        <MyAdmob
-          bannerSize='largeBanner'
-        />
-        <Text style={{ fontSize: 24, textAlign: 'center', margin: 10 }}>bannerSize='leaderboard'</Text>
-        <MyAdmob
-          bannerSize='leaderboard'
-        />
-        <Text style={{ fontSize: 24, textAlign: 'center', margin: 10 }}>bannerSize='mediumRectangle'</Text>
-        <MyAdmob
-          bannerSize='mediumRectangle'
-        />
-        <Text style={{ fontSize: 24, textAlign: 'center', margin: 10 }}>bannerSize='smartBannerLandscape'</Text>
-        <MyAdmob
-          bannerSize='smartBannerLandscape'
-        />
-        <Text style={{ fontSize: 24, textAlign: 'center', margin: 10 }}>bannerSize='smartBannerPortrait'</Text>
-        <MyAdmob
-          bannerSize='smartBannerPortrait'
-        />
+
+        <View><Hello>
+          </Hello>
+
+          </View>
+
       </ScrollView>
     </SafeAreaView>
   );
