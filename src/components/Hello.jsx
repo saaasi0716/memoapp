@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { string } from 'prop-types'
+import { string } from 'prop-types';
 
-function Hello(props) {
+export default function Hello(props) {
   const { children } = props;
   return (
     <View>
@@ -26,5 +26,3 @@ const styles = StyleSheet.create({
     padding: 16,
   },
 });
-
-export default Hello;

@@ -16,18 +16,19 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "testbuild"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+    "expo": {
+      "name": "Ads Showcase",
+      "android": {
+        "config": {
+          "googleMobileAdsAppId": "ca-app-pub-1274192629170329~3704820414"
+        }
+      },
+      "ios": {
+        "config": {
+          "googleMobileAdsAppId": "ca-app-pub-1274192629170329~9835076503"
+        }
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "description": ""
   }
 }
