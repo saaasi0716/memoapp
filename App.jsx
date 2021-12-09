@@ -1,8 +1,8 @@
 import { AdMobInterstitial } from 'expo-ads-admob';
-import { StatusBar } from 'expo-status-bar';
 import React, { useCallback, useEffect } from 'react';
 import { Button, Platform, SafeAreaView, ScrollView, StyleSheet, Text, View, KeyboardAvoidingView, TextInput, TouchableOpacity, } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
+
 
 
 import MyAdmob from './src/components/MyAdmob';
@@ -43,37 +43,44 @@ export default function App() {
 
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <ScrollView style={styles.container}>
-        <Text style={{ fontSize: 24, textAlign: 'center', marginBottom: 10 }}>インタースティシャルテスト</Text>
-        <StatusBar style="auto" />
-        <View><TextInput>
+    <View style={styles.container}>
+      <AppBar />
+
+
+
+       <View>
+          <View>
+              <View>
+                 <Text>買い物リスト</Text>
+                 <Text>2020年12月２４日 10:00</Text>
+              </View>
+          </View>
+       </View>
+
+        <Text style={{ fontSize: 24, textAlign: 'center', marginBottom: 10 }}>バナーテスト</Text>
+        <MyAdmob bannerSize='banner' />
+
+<View><TextInput>
           ここに予定を入力！
 　　　　　　<AntDesign name="pluscircleo" size={24} color="black" />
 
 
 
           保存する場合は下の青ボタンをプッシュ！
-          </TextInput></View>
-
-        <View style={{ backgroundColor: 'blue', margin: 32, borderRadius: 10 }}>
-          <Button title='インタースティシャル表示テスト' color='white' onPress={viewInterstatial} />
-        </View>
-        <Text style={{ fontSize: 24, textAlign: 'center', marginBottom: 10 }}>バナーテスト</Text>
-        <StatusBar style="auto" />
-        <Text style={{ fontSize: 24, textAlign: 'center', margin: 10 }}>bannerSize='banner'</Text>
-        <MyAdmob
-          bannerSize='banner'
-        />
-        <Text style={{ fontSize: 24, textAlign: 'center', margin: 10 }}>bannerSize='fullBanner'</Text>
-
+       </TextInput>
+    </View>
         <View><Hello>
           </Hello>
 
           </View>
 
-      </ScrollView>
-    </SafeAreaView>
+
+<Text style={{ fontSize: 24, textAlign: 'center', marginBottom: 10 }}>インタースティシャルテスト</Text>
+          <View style={{ backgroundColor: 'blue', margin: 32, borderRadius: 10 }}>
+          <Button title='インタースティシャル表示テスト' color='white' onPress={viewInterstatial} />
+        </View>
+
+        </View>
   );
 }
 
@@ -81,5 +88,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
