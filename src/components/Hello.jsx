@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { string } from 'prop-types';
 
 export default function Hello(props) {
+  // eslint-disable-next-line react/prop-types
   const { children } = props;
   return (
     <View>

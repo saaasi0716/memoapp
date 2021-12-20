@@ -1,9 +1,8 @@
 import { AdMobRewarded } from 'expo-ads-admob';
-import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { Button, Platform, SafeAreaView, ScrollView, StyleSheet, Text, View, } from 'react-native';
 
-export default function App() {
+export default function Reward() {
 
   const [reward, setReward] = useState(0);
 
@@ -19,8 +18,8 @@ export default function App() {
     // 実際に広告配信する際のID
     // 広告ユニットを作成した際に表示されたものを設定する
     const adUnitID = Platform.select({
-      ios: 'ca-app-pub-1274192629170329/1701187844',
-      android: 'ca-app-pub-1274192629170329/9292543887',
+      ios: 'ca-app-pub-3940256099942544/1712485313',
+      android: 'ca-app-pub-3940256099942544/5224354917',
     });
 
     if (testUnitID) {
